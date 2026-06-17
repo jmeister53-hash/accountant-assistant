@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Disconnect — Accountant Assistant</title>
+  <meta name="description" content="Step-by-step instructions to disconnect Accountant Assistant from QuickBooks Online and remove local data." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="index.html">Accountant Assistant</a>
+      <p class="tagline">A private bookkeeping helper, run locally by the business owner.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>How to disconnect</h1>
+    <p class="lead">
+      You can disconnect Accountant Assistant at any time. There are two parts: turn off the
+      connection inside QuickBooks Online, then remove the local data on your own computer.
+    </p>
+
+    <div class="card">
+      <h2>Step 1 — Disconnect inside QuickBooks Online</h2>
+      <ol>
+        <li>Sign in to QuickBooks Online.</li>
+        <li>Open the <strong>Settings</strong> menu (the gear icon, top right).</li>
+        <li>Choose <strong>Manage Apps</strong> (you can also do this from your account at intuit.com).</li>
+        <li>Find <strong>Accountant Assistant</strong> in the list of connected apps.</li>
+        <li>Select <strong>Disconnect</strong> and confirm.</li>
+      </ol>
+      <p>
+        This tells Intuit to stop allowing the tool to reach your books. After this, the saved
+        connection keys on your computer no longer work.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Step 2 — Remove the local data on your computer</h2>
+      <p>
+        Everything the tool stored lives only on your own computer. To remove it:
+      </p>
+      <ol>
+        <li>
+          Delete the <strong><code>.env</code> file</strong> in the tool's folder. This holds the
+          connection credentials.
+        </li>
+        <li>
+          Delete the <strong><code>data/</code> folder</strong> in the tool's folder. This holds
+          the copies of accounting information the tool reviewed.
+        </li>
+      </ol>
+      <p>
+        Once both are deleted, no QuickBooks credentials or accounting data remain on the
+        computer.
+      </p>
+    </div>
+
+    <p class="note">
+      That's it — the connection is off in QuickBooks Online and the local copies are gone.
+      If you want to use the tool again later, you can reconnect from the
+      <a href="index.html">home page</a> and approve access through Intuit's sign-in screen.
+    </p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="eula.html">Terms</a>
+        <a href="disconnect.html">Disconnect</a>
+      </nav>
+      <div class="contact">Contact: <a href="mailto:jmeister53@gmail.com">jmeister53@gmail.com</a></div>
+    </div>
+  </footer>
+</body>
+</html>
